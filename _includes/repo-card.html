@@ -8,7 +8,24 @@
       </a>
     </h1>
   </div>
-  <div class="text-gray mb-2 ws-normal">{{ repository.description }}</div>
+
+
+  {% if repository.has_pages %}
+  <div>
+    <h1 style="margin-left:23px;" class="f5 lh-condensed mb-1">
+      <a href="http://{{ repository.owner.login }}.github.io/{{ repository.name }}">
+        {% octicon eye height:14 class:"mr-1 v-align-middle" fill:"#586069" %}
+        <span class="text-normal">Visit website</span>
+      </a>
+    </h1>
+  </div>
+  {% endif %}
+
+
+  <div class="text-gray mb-2 ws-normal">
+    <img height='14px' width='14px' style="margin-right:10px" onerror="this.width='0px'; this.style='margin-right:0px'" src="http://{{ repository.owner.login }}.github.io/{{ repository.name }}/favicon.ico">{{ repository.description }}
+  </div>
+
   <div class="d-flex f6">
     {% if repository.stargazers_count %}
       <a href="" class="d-inline-block link-gray mr-4">
