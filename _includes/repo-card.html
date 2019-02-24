@@ -1,4 +1,5 @@
 <div class="github-component height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
+  
   <div class="d-flex flex-justify-between flex-items-start mb-1">
     <h1 class="f4 lh-condensed mb-1">
       <a href="{{ repository.html_url }}">
@@ -26,6 +27,8 @@
     <img height='14px' width='14px' style="margin-right:10px" onerror="this.width='0px'; this.style='margin-right:0px'" src="http://{{ repository.owner.login }}.github.io/{{ repository.name }}/favicon.ico">{{ repository.description }}
   </div>
 
+
+<!-- Deactivated as I don't have any forked or stared repo
   <div class="d-flex f6">
     {% if repository.stargazers_count %}
       <a href="" class="d-inline-block link-gray mr-4">
@@ -38,4 +41,15 @@
       </a>
     {% endif %}
   </div>
+ -->
+
+ {%if site.featured contains repository.name %}
+    <span class="featured-icon">
+      {% octicon star height:28 class:"mr-1 v-align-middle" aria-label:repo %}
+    </span>
+    <div class="featured-info {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
+      This is a featured project, one I'm pretty proud of. Check it out!
+    </div>
+  {% endif %}
+
 </div>

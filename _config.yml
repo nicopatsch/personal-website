@@ -26,3 +26,7 @@ projects:
   - GameOfLife3D
   - FlappyCloud
   - pong
+
+featured:
+  - MusicSignature
+  - Mondrian
