@@ -18,10 +18,11 @@ defaults:
 topics:
   
 projects: 
-# The progects you want to display
+# The projects you want to display
   - MusicSignature
   - Mondrian
   - emergence-simulation
   - BackPacker
   - GameOfLife3D
   - FlappyCloud
+  - pong
