@@ -43,13 +43,13 @@
   </div>
  -->
 
- {%if site.featured contains repository.name %}
-    <span class="featured-icon">
-      {% octicon star height:28 class:"mr-1 v-align-middle" aria-label:repo %}
-    </span>
-    <div class="featured-info {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
-      This is a featured project, one I'm pretty proud of. Check it out!
-    </div>
-  {% endif %}
+ {%if include.content=="featured" %}
+  <span class="featured-icon">
+    {% octicon star height:28 class:"mr-1 v-align-middle" aria-label:repo %}
+  </span>
+  <div class="featured-info {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} rounded-1 p-3">
+    This is a featured project, one I'm pretty proud of. Check it out!
+  </div>
+{% endif %}
 
 </div>

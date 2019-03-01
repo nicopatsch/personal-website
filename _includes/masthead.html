@@ -20,22 +20,40 @@
         </a>
       </div> 
     {% endif %}
-    {% if user.email %}
+    <!-- {% if user.email %} Condition not working -->
       <div class="{{ metadata_styles }}">
         {% octicon mail height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:email %}
-        <a href="mailto:{{ user.email }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
-          {{ user.email }}
-        </a>
+        <a href="mailto:nicolas.patschkowski@gmail.com" {% if site.style == 'dark' %}class="text-white"{% endif %}>
+        nicolas.patschkowski@gmail.com
+      </a>
       </div>
-    {% endif %}
+    <!-- {% endif %} -->
     {% if user.location %}
       <div class="{{ metadata_styles }} {% if site.style == 'dark' %}text-white{% endif %}">
         {% octicon location height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:Location %}
         {{ user.location }}
       </div>
     {% endif %}
+    
+
+    <!-- Social networks - custom -->
+    <div class="{{ metadata_styles }}">
+      <i class="fab fa-linkedin-in fa-sm mr-2 v-align-middle" style="color: {{ icon_color }};"></i>
+      <a href="{{ socials.linkedin }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
+        LinkedIn
+      </a>
+    </div>
+
+    <div class="{{ metadata_styles }}">
+      <i class="fab fa-twitter fa-sm mr-2 v-align-middle" style="color: {{ icon_color }};"></i>
+      <a href="{{ socials.twitter }}" {% if site.style == 'dark' %}class="text-white"{% endif %}>
+        Twitter
+      </a>
+    </div>
+
     {% if user.hireable %}
-      <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Available for hire</span>
+      <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Open to new projects</span>
     {% endif %}
+
   </div>
 {% endif %}

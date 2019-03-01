@@ -12,10 +12,8 @@ body { font-family: 'Rubik', sans-serif; }
 
 .featured-info { display: none; }
 
-.featured-icon:hover + .featured-info { display: block; position: absolute; left: -50px; top: 19px; width: 200px; }
-
-.featured-icon:hover { animation: shake 2s infinite both; backface-visibility: hidden; }
-
+@media (min-width: 768px) { .featured-icon:hover + .featured-info { display: block; position: absolute; left: -173px; top: -20px; width: 160px; background-color: #E7F1F9; }
+  .featured-icon:hover { animation: shake 2s infinite both; backface-visibility: hidden; } }
 @keyframes shake { 10%, 90% { transform: rotate(40deg); }
   20%, 80% { transform: rotate(-40deg); }
   30%, 50%, 70% { transform: rotate(40deg); }

@@ -19,14 +19,16 @@ topics:
   
 projects: 
 # The projects you want to display
-  - MusicSignature
-  - Mondrian
-  - emergence-simulation
-  - BackPacker
-  - GameOfLife3D
-  - FlappyCloud
-  - pong
+  featured:
+    - MusicSignature
+    - Mondrian
+  normal:
+    - emergence-simulation
+    - BackPacker
+    - GameOfLife3D
+    - FlappyCloud
+    - pong
 
-featured:
-  - MusicSignature
-  - Mondrian
+socials:
+  twitter: https://twitter.com/nicopatsch
+  linkedin: https://www.linkedin.com/in/nicolas-patschkowski-8a300b77/
