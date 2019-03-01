@@ -5,7 +5,11 @@ body { font-family: 'Rubik', sans-serif; }
 .github-component { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; }
 
 /* CUSTOM STYLE */
-.github-component { position: relative; }
+body, .d-md-flex { min-height: 100vh; }
+
+.github-component { display: flex; position: relative; flex-direction: column; justify-content: space-between; }
+
+.card-footer { padding: 10px 15px 7px 15px; background-color: #E7F1F9; border-radius: 0px 0px 3px 3px; margin-top: auto; margin-bottom: 0; }
 
 .featured-icon { position: absolute; left: -12px; top: -12px; fill: white; background-color: #0366d6; width: 2.2em; height: 2.2em; border-radius: 1.1em; /*border: 2px solid #0366d6;*/ text-align: center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 .featured-icon svg { display: block; width: 70%; height: 70%; margin: 15%; /*transform: rotate(-15deg);*/ }

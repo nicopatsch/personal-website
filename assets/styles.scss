@@ -14,9 +14,30 @@ body {
 
 /* CUSTOM STYLE */
 
-.github-component {
-	position: relative;
+
+body, .d-md-flex {
+  min-height: 100vh;
 }
+
+
+.github-component {
+  display: flex;
+	position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.card-footer {
+  padding: 10px 15px 7px 15px;
+  background-color: #E7F1F9;
+  border-radius: 0px 0px 3px 3px;
+  margin-top:auto;
+  margin-bottom: 0;
+}
+
+
+
 
 .featured-icon {
 	position: absolute;
