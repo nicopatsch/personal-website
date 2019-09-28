@@ -1,0 +1,9 @@
+<h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>My sources of reference</h2>
+<p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">These are the blogs and journals that inspire me.</p>
+<div class="d-sm-flex flex-wrap gutter-condensed mb-4">
+  {% for source in site.sources %}
+    <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+      {% include source-card.html %}
+    </div>
+  {% endfor %}
+</div>

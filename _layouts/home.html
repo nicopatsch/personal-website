@@ -47,6 +47,10 @@
         {% unless posts_total == 0 %}
           {% include thoughts.html %}
         {% endunless %}
+
+        {% unless site.sources == 0 %}
+          {% include sources.html %}
+        {% endunless %}
       </div>
     </div>
   </div>

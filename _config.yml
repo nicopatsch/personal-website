@@ -29,6 +29,46 @@ projects:
     - FlappyCloud
     - pong
 
+sources:
+# The sources you want to link
+  - name: Nautilus
+    url: http://nautil.us/
+    description: A general news paper that tackles complexe subjects in depth — consciousness, time, philosophy, science...
+  - name: Colah's Blog
+    url: http://colah.github.io/
+    tags: 
+      - dataviz
+      - neural networks
+    description: A great blog on Data visualization and neural networks. Great animations and visualization of complexe data concepts.
+  - name: Gate Notes
+    url: https://www.gatesnotes.com/About-Bill-Gates/Summer-Books-2019
+    description: Bill Gates blog with a great insight into his life and incredible mind.
+  - name: Quanta Magazine
+    url: https://www.quantamagazine.org
+    description: A great math newspaper that gives more dynamism and visualization to math concepts. Great pedagogy example!
+    tags: 
+      - math
+  - name: The Gradient
+    url: https://thegradient.pub/how-to-fix-rl/
+    description: A great newspaper on Neural Networks.
+    tags: 
+      - neural networks
+  - name: EdSurge
+    url: https://www.edsurge.com
+    description: A good way to keep in touch with advancements in the Education space.
+    tags: 
+      - education
+  - name: Ask A Philosopher
+    url: https://askaphilosopher.org
+    description: You ask a question, a philosopher answers. Quite simple and often captivating.
+    tags: 
+      - philosophy
+  - name: LessWrong
+    url: https://www.lesswrong.com
+    description: Eliezer Yudkowsky is obsessed with truth and rationality. This is his community website on which everyone tries to improve their decision making and remain in truth.
+    tags:
+      - philosophy
+
 socials:
   twitter: https://twitter.com/nicopatsch
   linkedin: https://www.linkedin.com/in/nicolas-patschkowski-8a300b77/

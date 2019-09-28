@@ -1,0 +1,13 @@
+<div class="height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
+  <div class="d-flex flex-justify-between flex-items-start mb-1">
+    <h1 class="f4 lh-condensed mb-1">
+      <a href="{{ source.url }}">
+        {{ source.name }}
+      </a>
+    </h1>
+  </div>
+  <div class="text-gray mb-2 ws-normal">{{ source.description }}</div>
+  <div class="text-white mb-2 ws-normal text-bold" style="text-transform: capitalize;">
+  	{% for tag in source.tags %} <span class="bg-blue" style="border-radius: 4px; padding:4px 6px" >{{ tag }}</span> {% endfor %}
+  </div>
+</div>
